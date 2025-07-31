@@ -1,17 +1,11 @@
 import { useState, useEffect } from "react";
-import { FiMenu } from "react-icons/fi";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
   const element = document.documentElement;
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
 
   useEffect(() => {
     if (theme === "dark") {
