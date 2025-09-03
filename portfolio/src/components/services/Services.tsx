@@ -1,3 +1,4 @@
+import Project from "./Project";
 import ServicesBox from "./ServicesBox";
 
 const Services = () => {
@@ -15,8 +16,9 @@ const Services = () => {
           ⚙️ Tools: Git & GitHub, IntelliJ IDEA, VS Code, Postman, Maven.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 container">
         <ServicesBox />
+        <Project />
       </div>
     </section>
   );
